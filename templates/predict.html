@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'test.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'animation.css' %}"> -->
+    <title>IPL Score Prediction Home Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Hello Wel-Come to IPL Score Prediction</h1>
+        </div>
+        <div class="input">
+            <form action="predict">
+                <div class="tNt">
+                    <div class="b_team">
+                        <div class="sec1">
+                            <h1>
+                                Batting Team:
+                            </h1>                            
+                            <select name="bat_team" id="">
+                                <option value="bat_team_Chennai Super Kings">CSK</option>
+                                <option value="bat_team_Delhi Daredevils">DC</option>
+                                <option value="bat_team_Kings XI Punjab">KXIP</option>
+                                <option value="bat_team_Kolkata Knight Riders">KKR</option>
+                                <option value="bat_team_Mumbai Indians">MI</option>
+                                <option value="bat_team_Rajasthan Royals">RR</option>
+                                <option value="bat_team_Royal Challengers Bangalore">RCB</option>
+                                <option value="bat_team_Sunrisers Hyderabad">SRH</option>
+                            </select>
+                        </div>
+                        <div class="sec2">
+                            <div class="image-container">
+                                <img src="{% static 'ipl/rcb_logo.jpg' %}" alt="images" class="im1">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/srh_logo.png' %}" alt="images" class="im1">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/pk_logo.png' %}" alt="images" class="im1">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/mi_logo.jpg' %}" alt="images" class="im1">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/csk_logo.jpg' %}" alt="images" class="im1">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/rr_logo.jpg' %}" alt="images" class="im1">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/kkr_logo.jpg' %}" alt="images" class="im1">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/dc_logo.jpg' %}" alt="images" class="im1">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="final-prediction">
+                        <div class="final-greeting">
+                            <h1>The Final Score Of</h1>
+                        </div>
+                        <div class="final-greeting team">
+                            <h1> {{team}} </h1>
+                        </div>
+                        <div class="final-greeting">
+                            <h1>Will Be</h1>
+                        </div>
+                        <div class="final-score score">
+                            <h1>{{ score1 }} To {{ score2 }}</h1>
+                        </div>
+                    </div>
+                    <div class="b_team">
+                        <div class="sec1">
+                            <h1>
+                                Bowling Team:
+                            </h1>
+                            <select name="bowl_team" id="">
+                                <option value="bowl_team_Chennai Super Kings">CSK</option>
+                                <option value="bowl_team_Delhi Daredevils">DC</option>
+                                <option value="bowl_team_Kings XI Punjab">KXIP</option>
+                                <option value="bowl_team_Kolkata Knight Riders">KKR</option>
+                                <option value="bowl_team_Mumbai Indians">MI</option>
+                                <option value="bowl_team_Rajasthan Royals">RR</option>
+                                <option value="bowl_team_Royal Challengers Bangalore">RCB</option>
+                                <option value="bowl_team_Sunrisers Hyderabad">SRH</option>
+                            </select>
+                        </div>
+                        <div class="sec2">
+                            <div class="image-container">
+                                <img src="{% static 'ipl/rcb_logo.jpg' %}" alt="images" class="im2">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/srh_logo.png' %}" alt="images" class="im2">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/pk_logo.png' %}" alt="images" class="im2">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/mi_logo.jpg' %}" alt="images" class="im2">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/csk_logo.jpg' %}" alt="images" class="im2">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/rr_logo.jpg' %}" alt="images" class="im2">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/kkr_logo.jpg' %}" alt="images" class="im2">
+                            </div>
+                            <div class="image-container">
+                                <img src="{% static 'ipl/dc_logo.jpg' %}" alt="images" class="im2">
+                            </div>
+                         </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
